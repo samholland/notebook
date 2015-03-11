@@ -7,7 +7,7 @@ Making a Sass list:
 Looping:
 
     @for $i from 1 through length($list-of-classnames) {
-      $ornament: nth($list-of-classnames, $i); 
+      $class-item: nth($list-of-classnames, $i); 
       #{$class-item} {
         /* include sass here */
       }
