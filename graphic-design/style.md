@@ -1,4 +1,6 @@
-# Style
+# Notes on style
+
+### Net art
 
 Virality is an aesthetics for ubiquitous surveillance.
 –Rob Horning, Marginal Utility
