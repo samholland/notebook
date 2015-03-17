@@ -9,9 +9,11 @@
 You can download and convert YouTube video with [youtube-dl](https://github.com/rg3/youtube-dl/blob/master/README.md#readme)
 
 If subtitles already exist:
+
     youtube-dl --write-sub [video or playlist URL]
 
 If not, auto subtitling:
+
     youtube-dl --write-auto-sub [video or playlist URL]
 
 Strip the language tag from the .srt filename so that videogrep can find the associated video.
@@ -22,5 +24,6 @@ Make sure moviepy is up to date.
 
 [Reading material](http://zulko.github.io/blog/2014/06/21/some-more-videogreping-with-python/)
 
-example: 
-python videogrep.py --input [file] --search 'food' --search-type hyper
+example hypernym: 
+
+    python videogrep.py --input [file] --search 'food' --search-type hyper
