@@ -8,7 +8,7 @@ Based on [the instructions here](http://blog.pkh.me/p/21-high-quality-gif-with-f
     # ffmpeg -i [source-video.mov] -vf palettegen palette.png
     # assumes a palette named palette.png
 
-    palette="palette.png"
+    palette="aiga.png"
 
     # set the filters to establish . Optional scaling: scale=500:-1=flags:lanczos
 
