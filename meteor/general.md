@@ -34,12 +34,12 @@ Event properties + methods
     
 currentTarget() is always the element attached to the event. event.target can be a child element a parent, eg.
 
-'click p': function(event) {
-  var paragraph = event.currentTarget // always going to be the <p>
-  var clickedElement = event.target // could be the <p>, could be a child like a span element
-}
+    'click p': function(event) {
+      var paragraph = event.currentTarget // always going to be the <p>
+      var clickedElement = event.target // could be the <p>, could be a child like a span element
+    }
 
-if a selector matches multiple elements that an event bubbles to, it'll be called multiple times.
+If a selector matches multiple elements that an event bubbles to, it'll be called multiple times.
 
 
 ### Mongo Collections
@@ -48,8 +48,7 @@ constructor
 CollectionName = new Mongo.collection("collectionName");
 
 collection methods
-Question: what is an upsert?
-
+upsert: inserts a record if none found, else returns false.
 
 CollectionName.find({});
 CollectionName.findOne({});
@@ -63,18 +62,18 @@ CollectionName.deny({});
 Create a cursor with find({});
 
 So... 
-        var topPosts = CollectionName.find({}, {sort: -1, limit: 5});
-        var count = 0;
-        topPosts.forEach(function(post) {
-            console.log("title " + count + ": " + post.title);
-            count++;
-        });
+    var topPosts = CollectionName.find({}, {sort: -1, limit: 5});
+    var count = 0;
+    topPosts.forEach(function(post) {
+        console.log("title " + count + ": " + post.title);
+        count++;
+    });
 
 ### Mongo Query Operators
 MongoDB Query Operators are "meta" operators that let you modify query behavior or output. 
 #### Operators
 $set replaces the value of a field w the specified value
-        { $set: {<field>: <val>, ...}}
+    { $set: {<field>: <val>, ...}}
 $ne selects documents where the value of the field is not equal to the specified value
 
 ## Session
@@ -84,10 +83,10 @@ Session is reactive, meaning it'll rerender if template data changes.
 ##### Session.set(key, val)
 
 Can be called on an object of keys and values ie
-Session.set({
-    a: "foo",
-    b: "bar"
-})
+    Session.set({
+      a: "foo",
+      b: "bar"
+    })
 
 ##### Session.setDefault(key, val)
 
